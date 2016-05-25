@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="DefaultWindow" Name="Lobby" >
+        <Property Name="Font" Value="Malgun-10" />
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+        <Window Type="Vanilla/StaticImage" Name="Lobby/Main" >
+            <Property Name="Font" Value="Malgun-10" />
+            <Property Name="Image" Value="set:Title2 image:full_image" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+            <Window Type="DefaultWindow" Name="Lobby/Main/List" >
+                <Property Name="Font" Value="Malgun-10" />
+                <Property Name="UnifiedAreaRect" Value="{{0.02,0},{0.05,0},{0.5,0},{0.65,0}}" />
+                <Window Type="Vanilla/Button" Name="Lobby/Main/List/Room0" >
+                    <Property Name="Font" Value="Malgun-10" />
+                    <Property Name="Alpha" Value="0.8" />
+                    <Property Name="HoverImage" Value="set:Lobby image:Room_Hover" />
+                    <Property Name="NormalImage" Value="set:Lobby image:Room_Normal" />
+                    <Property Name="PushedImage" Value="set:Lobby image:Room_Hover" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.02,0},{0.02,0},{0.98,0},{0.27,0}}" />
+                    <Window Type="Vanilla/StaticText" Name="Lobby/Main/List/Room0/RoomNum" >
+                        <Property Name="Alpha" Value="0" />
+                        <Property Name="FrameEnabled" Value="False" />
+                        <Property Name="UnifiedAreaRect" Value="{{0.02,0},{0.3,0},{0.02,0},{0.6,0}}" />
+                    </Window>
+                </Window>
+                <Window Type="Vanilla/Button" Name="Lobby/Main/List/Room1" >
+                    <Property Name="Font" Value="Malgun-10" />
+                    <Property Name="Alpha" Value="0.8" />
+                    <Property Name="HoverImage" Value="set:Lobby image:Room_Hover" />
+                    <Property Name="NormalImage" Value="set:Lobby image:Room_Normal" />
+                    <Property Name="PushedImage" Value="set:Lobby image:Room_Hover" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.02,0},{0.3,0},{0.98,0},{0.55,0}}" />
+                    <Window Type="Vanilla/StaticText" Name="Lobby/Main/List/Room1/RoomNum" >
+                        <Property Name="Alpha" Value="0" />
+                        <Property Name="UnifiedAreaRect" Value="{{0.02,0},{0.3,0},{0.02,0},{0.6,0}}" />
+                    </Window>
+                </Window>
+                <Window Type="Vanilla/Button" Name="Lobby/Main/List/Room2" >
+                    <Property Name="Font" Value="Malgun-10" />
+                    <Property Name="Alpha" Value="0.8" />
+                    <Property Name="HoverImage" Value="set:Lobby image:Room_Hover" />
+                    <Property Name="NormalImage" Value="set:Lobby image:Room_Normal" />
+                    <Property Name="PushedImage" Value="set:Lobby image:Room_Hover" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.02,0},{0.58,0},{0.98,0},{0.83,0}}" />
+                    <Window Type="Vanilla/StaticText" Name="Lobby/Main/List/Room2/RoomNum" >
+                        <Property Name="Alpha" Value="0" />
+                        <Property Name="UnifiedAreaRect" Value="{{0.02,0},{0.3,0},{0.02,0},{0.6,0}}" />
+                    </Window>
+                </Window>
+                <Window Type="Vanilla/Button" Name="Lobby/Main/List/Prev" >
+                    <Property Name="Font" Value="Malgun-10" />
+                    <Property Name="Alpha" Value="0.8" />
+                    <Property Name="HoverImage" Value="set:Lobby image:Prev_Hover" />
+                    <Property Name="NormalImage" Value="set:Lobby image:Prev_Normal" />
+                    <Property Name="PushedImage" Value="set:Lobby image:Prev_Push" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.29,0},{0.85,0},{0.39,0},{0.95,0}}" />
+                </Window>
+                <Window Type="Vanilla/Button" Name="Lobby/Main/List/Next" >
+                    <Property Name="Font" Value="Malgun-10" />
+                    <Property Name="Alpha" Value="0.8" />
+                    <Property Name="HoverImage" Value="set:Lobby image:Next_Hover" />
+                    <Property Name="NormalImage" Value="set:Lobby image:Next_Normal" />
+                    <Property Name="PushedImage" Value="set:Lobby image:Next_Push" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.61,0},{0.85,0},{0.71,0},{0.95,0}}" />
+                </Window>
+                <Window Type="Vanilla/Button" Name="Lobby/Main/List/Refresh" >
+                    <Property Name="Font" Value="Malgun-10" />
+                    <Property Name="Alpha" Value="0.8" />
+                    <Property Name="HoverImage" Value="set:Lobby image:Refresh_Hover" />
+                    <Property Name="NormalImage" Value="set:Lobby image:Refresh_Normal" />
+                    <Property Name="PushedImage" Value="set:Lobby image:Refresh_Push" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.4,0},{0.85,0},{0.6,0},{0.95,0}}" />
+                </Window>
+            </Window>
+            <Window Type="Vanilla/StaticImage" Name="Lobby/Main/Gunner" >
+                <Property Name="Image" Value="set:lobby_Gunner image:full_image" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0.500586,0},{0.038677,0},{0.867773,0},{0.973148,0}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="Vanilla/StaticImage" Name="Lobby/Main/TiTle" >
+                <Property Name="Image" Value="set:Title image:full_image" />
+                <Property Name="AlwaysOnTop" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0.659101,0},{0.416946,0},{0.963437,0},{0.63715,0}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="Vanilla/Button" Name="Lobby/Main/Button_Create" >
+                <Property Name="Font" Value="Malgun-10" />
+                <Property Name="HoverImage" Value="set:Lobby image:Create_Hover" />
+                <Property Name="AlwaysOnTop" Value="True" />
+                <Property Name="NormalImage" Value="set:Lobby image:Create_Normal" />
+                <Property Name="PushedImage" Value="set:Lobby image:Create_Push" />
+                <Property Name="UnifiedAreaRect" Value="{{0.740273,0},{0.65,0},{0.909023,0},{0.739583,0}}" />
+            </Window>
+            <Window Type="Vanilla/Button" Name="Lobby/Main/Button_Entry" >
+                <Property Name="Font" Value="Malgun-10" />
+                <Property Name="HoverImage" Value="set:Lobby image:Entry_Hover" />
+                <Property Name="AlwaysOnTop" Value="True" />
+                <Property Name="NormalImage" Value="set:Lobby image:Entry_Normal" />
+                <Property Name="PushedImage" Value="set:Lobby image:Entry_Push" />
+                <Property Name="UnifiedAreaRect" Value="{{0.740273,0},{0.765,0},{0.909023,0},{0.859583,0}}" />
+            </Window>
+            <Window Type="Vanilla/Button" Name="Lobby/Main/Button_Exit" >
+                <Property Name="Font" Value="Malgun-10" />
+                <Property Name="HoverImage" Value="set:Lobby image:Exit_Hover" />
+                <Property Name="AlwaysOnTop" Value="True" />
+                <Property Name="NormalImage" Value="set:Lobby image:Exit_Normal" />
+                <Property Name="PushedImage" Value="set:Lobby image:Exit_Push" />
+                <Property Name="UnifiedAreaRect" Value="{{0.74125,0},{0.89,0},{0.909023,0},{0.979584,0}}" />
+            </Window>
+            <Window Type="DefaultWindow" Name="Lobby/Main/Chat" >
+                <Property Name="Font" Value="Malgun-10" />
+                <Property Name="AlwaysOnTop" Value="True" />
+                <Property Name="UnifiedAreaRect" Value="{{0.02,0},{0.65,0},{0.65,0},{0.98,0}}" />
+                <Window Type="Vanilla/Listbox" Name="Lobby/Main/Chat/List" >
+                    <Property Name="Font" Value="Malgun-10" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{0.85,0}}" />
+                </Window>
+                <Window Type="Vanilla/Editbox" Name="Lobby/Main/Chat/Edit_Input" >
+                    <Property Name="Font" Value="Malgun-10" />
+                    <Property Name="MaxTextLength" Value="1073741823" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0.85,0},{0.85,0},{1,0}}" />
+                    <Property Name="TextParsingEnabled" Value="False" />
+                </Window>
+                <Window Type="Vanilla/Button" Name="Lobby/Main/Chat/Button_Send" >
+                    <Property Name="Font" Value="Malgun-10" />
+                    <Property Name="HoverImage" Value="set:Lobby image:Send_Hover" />
+                    <Property Name="NormalImage" Value="set:Lobby image:Send_Normal" />
+                    <Property Name="PushedImage" Value="set:Lobby image:Send_Push" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.85,0},{0.85,0},{1,0},{1,0}}" />
+                </Window>
+            </Window>
+        </Window>
+        <Window Type="Vanilla/StaticImage" Name="Lobby/New" >
+            <Property Name="Font" Value="Malgun-10" />
+            <Property Name="Image" Value="set:Lobby image:Window_Create" />
+            <Property Name="Visible" Value="False" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.35,0},{0.35,0},{0.65,0},{0.75,0}}" />
+            <Window Type="Vanilla/Button" Name="Lobby/New/Confirm" >
+                <Property Name="Font" Value="Malgun-10" />
+                <Property Name="HoverImage" Value="set:Login image:OK_Hover" />
+                <Property Name="NormalImage" Value="set:Login image:OK_Normal" />
+                <Property Name="PushedImage" Value="set:Login image:OK_Push" />
+                <Property Name="UnifiedAreaRect" Value="{{0.2,0},{0.75,0},{0.47,0},{0.87,0}}" />
+            </Window>
+            <Window Type="Vanilla/Button" Name="Lobby/New/Cancel" >
+                <Property Name="Font" Value="Malgun-10" />
+                <Property Name="HoverImage" Value="set:Login image:Cancel_Hover" />
+                <Property Name="NormalImage" Value="set:Login image:Cancel_Normal" />
+                <Property Name="PushedImage" Value="set:Login image:Cancel_Push" />
+                <Property Name="UnifiedAreaRect" Value="{{0.53,0},{0.75,0},{0.8,0},{0.87,0}}" />
+            </Window>
+            <Window Type="Vanilla/Editbox" Name="Lobby/New/Name" >
+                <Property Name="Font" Value="Malgun-10" />
+                <Property Name="MaxTextLength" Value="1073741823" />
+                <Property Name="UnifiedAreaRect" Value="{{0.28,0},{0.2,0},{0.9,0},{0.3,0}}" />
+                <Property Name="TextParsingEnabled" Value="False" />
+            </Window>
+            <Window Type="Vanilla/StaticImage" Name="Lobby/New/Text_Name" >
+                <Property Name="Font" Value="Malgun-10" />
+                <Property Name="Image" Value="set:Lobby image:Text_Name" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.21,0},{0.25,0},{0.29,0}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="Vanilla/StaticImage" Name="Lobby/New/Text_Create" >
+                <Property Name="Image" Value="set:Lobby image:Text_Create" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0.35,0},{0.05,0},{0.65,0},{0.13,0}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="Vanilla/StaticImage" Name="Lobby/New/Map" >
+                <Property Name="Image" Value="set:Title image:full_image" />
+                <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.33,0},{0.9,0},{0.7,0}}" />
+            </Window>
+        </Window>
+        <Window Type="Vanilla/StaticImage" Name="Lobby/Message" >
+            <Property Name="Font" Value="Malgun-10" />
+            <Property Name="Image" Value="set:Lobby image:Window_Noti" />
+            <Property Name="Visible" Value="False" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.37,0},{0.44,0},{0.63,0},{0.74,0}}" />
+            <Window Type="Vanilla/StaticText" Name="Lobby/Message/Text_Status" >
+                <Property Name="Font" Value="Malgun-10" />
+                <Property Name="HorzFormatting" Value="WordWrapCentred" />
+                <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.37,0},{0.9,0},{0.67,0}}" />
+            </Window>
+            <Window Type="Vanilla/Button" Name="Lobby/Message/Button_OK" >
+                <Property Name="Font" Value="Malgun-10" />
+                <Property Name="HoverImage" Value="set:Login image:OK_Hover" />
+                <Property Name="NormalImage" Value="set:Login image:OK_Normal" />
+                <Property Name="PushedImage" Value="set:Login image:OK_Push" />
+                <Property Name="UnifiedAreaRect" Value="{{0.35,0},{0.74,0},{0.65,0},{0.9,0}}" />
+            </Window>
+            <Window Type="Vanilla/StaticImage" Name="Lobby/Message/Error" >
+                <Property Name="Image" Value="set:Lobby image:Noti" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0.3,0},{0.12,0},{0.7,0},{0.28,0}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

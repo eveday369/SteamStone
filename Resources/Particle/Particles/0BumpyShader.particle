@@ -1,0 +1,71 @@
+particle_system 0BumpyShader
+{
+	material Bump
+	particle_width 100.0
+	particle_height 100.0
+	quota 10000
+	cull_each true
+	sorted true
+	local_space false
+	iteration_interval 0.0
+	nonvisible_update_timeout 0.0
+	billboard_type point
+	billboard_origin center
+	billboard_rotation_type vertex
+	point_rendering false
+	accurate_facing true
+
+	emitter Box
+	{
+		position 0.0 435.489990234375 0.0
+		direction 0.0 0.0 1.0
+		angle 180
+		width 4000
+		height 750
+		depth 4000
+		emission_rate 5000
+		velocity_min 1
+		velocity_max 1
+		time_to_live_min 0.05
+		time_to_live_max 0.75
+		duration_min 0
+		duration_max 0
+		repeat_delay_min 0
+		repeat_delay_max 0
+		colour_range_start 1 1 1 1
+		colour_range_end 1 1 1 1
+	}
+
+	affector LinearForce
+	{
+		force_vector 0.0 -999.99 0.0
+		force_application add
+	}
+
+	affector Scaler
+	{
+		rate -16
+	}
+
+	affector Rotator
+	{
+		rotation_speed_range_start 100
+		rotation_speed_range_end 400
+		rotation_range_start 0
+		rotation_range_end 180
+	}
+
+	affector DeflectorPlane
+	{
+		plane_point 0 0 0
+		plane_normal 0 1 0
+		bounce 4.35
+	}
+
+	affector DirectionRandomiser
+	{
+		randomness 804.9
+		scope 69.5
+		keep_velocity true
+	}
+}

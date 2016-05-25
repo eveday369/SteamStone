@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Imageset Name="HP_set" Imagefile="DCImage.png" NativeHorzRes="1280" NativeVertRes="1024" AutoScaled="true" >
+    <Image Name="L_hp" XPos="576" YPos="193" Width="386" Height="28" />
+    <Image Name="S_hp" XPos="640" YPos="148" Width="158" Height="21" />
+</Imageset>

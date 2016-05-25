@@ -1,0 +1,24 @@
+
+material KouraiCross
+{
+	receive_shadows off
+
+	technique
+	{
+		pass
+		{
+			lighting off
+			cull_hardware none
+			cull_software none
+			
+			texture_unit
+			{
+				texture Resources/Textures/KouraiCross.jpg
+				scale 1.0 1.0
+				tex_coord_set 0
+				tex_address_mode wrap
+				filtering trilinear
+			}
+		}
+	}
+}

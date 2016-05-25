@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="DefaultWindow" Name="Result" >
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+        <Window Type="Vanilla/Button" Name="Result/Return" >
+            <Property Name="Font" Value="Malgun-10" />
+            <Property Name="HoverImage" Value="set:Login image:OKW_Hover" />
+            <Property Name="NormalImage" Value="set:Login image:OKW_Normal" />
+            <Property Name="PushedImage" Value="set:Login image:OKW_Push" />
+            <Property Name="UnifiedAreaRect" Value="{{0.25,0},{0.75,0},{0.43,0},{0.85,0}}" />
+        </Window>
+        <Window Type="Vanilla/Button" Name="Result/Exit" >
+            <Property Name="Font" Value="Malgun-10" />
+            <Property Name="HoverImage" Value="set:Login image:Exit_Hover" />
+            <Property Name="NormalImage" Value="set:Login image:Exit_Normal" />
+            <Property Name="PushedImage" Value="set:Login image:Exit_Push" />
+            <Property Name="UnifiedAreaRect" Value="{{0.57,0},{0.75,0},{0.75,0},{0.85,0}}" />
+        </Window>
+        <Window Type="Vanilla/StaticImage" Name="Result/WinLose" >
+            <Property Name="Image" Value="set:Win image:Win" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.25,0},{0.2,0},{0.75,0},{0.55,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="Vanilla/StaticImage" Name="Result/Credit" >
+            <Property Name="Image" Value="set:Credit image:full_image" />
+            <Property Name="Visible" Value="False" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+    </Window>
+</GUILayout>

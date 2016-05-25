@@ -1,0 +1,8 @@
+fragment_program Ogre/Compositor/StdQuad_GLSL_fp glsl
+{
+	source Resources/Programs/StdQuad_fp.glsl
+	default_params
+	{
+		param_named TEX0 int 0
+	}
+}

@@ -1,0 +1,21 @@
+vertex_program BumpVSglsl glsl
+{
+	source Resources/Programs/Bump_vs.glsl
+
+	default_params
+	{
+	}
+}
+
+fragment_program BumpPSglsl glsl
+{
+	source Resources/Programs/Bump_ps.glsl
+
+	default_params
+	{
+		param_named_auto ambient ambient_light_colour
+		param_named_auto lightDiffuse light_diffuse_colour 0		
+		param_named diffuseMap int 0
+		param_named bumpMap int 1
+	}
+}

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="Vanilla/FrameWindow" Name="Main" >
+        <Property Name="Font" Value="Malgun-10" />
+        <Property Name="Text" Value="안녕?" />
+        <Property Name="TitlebarFont" Value="Malgun-10" />
+        <Property Name="TitlebarEnabled" Value="True" />
+        <Property Name="UnifiedAreaRect" Value="{{0.2,0},{0.2,0},{0.45,0},{0.45,0}}" />
+    </Window>
+</GUILayout>

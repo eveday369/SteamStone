@@ -1,0 +1,5 @@
+<Imageset AutoScaled="true" Imagefile="Walker.png" Name="Walker" NativeHorzRes="1280" NativeVertRes="1024">
+    <Image Height="780" Name="Full" Width="552" XPos="0" YPos="0" />
+    <Image Height="148" Name="Circle" Width="148" XPos="606" YPos="16" />
+    <Image Height="168" Name="Chest" Width="134" XPos="605" YPos="190" />
+</Imageset>

@@ -1,0 +1,9 @@
+fragment_program Ogre/Compositor/QuadAnaglyphMerge_GLSL_fp glsl
+{
+	source Resources/Programs/QuadAnaglyphMerge_fp.glsl
+	default_params
+	{
+		param_named TEX0 int 0
+		param_named TEX1 int 1
+	}
+}

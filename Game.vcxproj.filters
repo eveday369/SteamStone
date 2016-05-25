@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\Object">
+      <UniqueIdentifier>{a19b66cf-2472-4366-b0af-223fd83826d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\System">
+      <UniqueIdentifier>{687a3924-8cbf-4d10-80d7-ead6b4954516}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\System\Main">
+      <UniqueIdentifier>{fed7b5fb-b87a-4f7f-9915-e09173f6cf37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\System\Input">
+      <UniqueIdentifier>{3e7dc103-71f0-4518-98c2-52b26ce221ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\System\Camera">
+      <UniqueIdentifier>{aef17be8-64bf-46ea-941d-65df1e48f0bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\System\GameState">
+      <UniqueIdentifier>{4b1ef3e2-4030-4f79-8a12-2ec7149cfd19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Object\Character">
+      <UniqueIdentifier>{ee815fba-5d47-4b95-b757-e2a48137bd7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Object\Map">
+      <UniqueIdentifier>{5a048a4f-e0d2-48dd-8421-baf60154428c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Object\Skill">
+      <UniqueIdentifier>{176edb31-25f8-464d-bb4e-7c01dd23766d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\System\UI">
+      <UniqueIdentifier>{ec82606c-b63f-480d-8cbc-1bf010c22189}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\ClientServer">
+      <UniqueIdentifier>{9bb87a6b-1584-44c7-a3e0-752baaf3d17f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\ClientServer\protoc">
+      <UniqueIdentifier>{b0e1d862-ab3e-4a70-9619-b15a60d5761d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\System\Sound">
+      <UniqueIdentifier>{d268c684-f346-4213-8d44-44ea83102b4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\System\TextID">
+      <UniqueIdentifier>{cb811f10-1c4b-43db-ba44-206013fb7971}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Object\Character\Effect">
+      <UniqueIdentifier>{b2a77f01-9ea5-46ca-aa01-93b0199edbdf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\System\HP">
+      <UniqueIdentifier>{decaa314-b77c-4a0a-be76-b35c6c71f96e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\ClientServer\buffer">
+      <UniqueIdentifier>{15883bd1-ccb6-4511-9f91-e78bd1053747}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="res\Resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BaseApplication.h">
+      <Filter>소스 파일\System\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Game.h">
+      <Filter>소스 파일\System\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameRun.h">
+      <Filter>소스 파일\System\GameState</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Result.h">
+      <Filter>소스 파일\System\GameState</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Character.h">
+      <Filter>소스 파일\Object\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Skill.h">
+      <Filter>소스 파일\Object\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Keyboard.h">
+      <Filter>소스 파일\System\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Mouse.h">
+      <Filter>소스 파일\System\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Camera.h">
+      <Filter>소스 파일\System\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Map.h">
+      <Filter>소스 파일\Object\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Animation.h">
+      <Filter>소스 파일\Object\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameLoginWindow.h">
+      <Filter>소스 파일\System\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GUIBase.h">
+      <Filter>소스 파일\System\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameState.h">
+      <Filter>소스 파일\System\GameState</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameLobbyWindow.h">
+      <Filter>소스 파일\System\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameRoomWindow.h">
+      <Filter>소스 파일\System\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameRunWindow.h">
+      <Filter>소스 파일\System\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\protoc\Lobby_Packet.pb.h">
+      <Filter>소스 파일\ClientServer\protoc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\protoc\Login_Packet.pb.h">
+      <Filter>소스 파일\ClientServer\protoc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\protoc\PACKET.pb.h">
+      <Filter>소스 파일\ClientServer\protoc</Filter>
+    </ClInclude>
+    <ClInclude Include="server\CServerMain.h">
+      <Filter>소스 파일\ClientServer</Filter>
+    </ClInclude>
+    <ClInclude Include="server\LobbyServer.h">
+      <Filter>소스 파일\ClientServer</Filter>
+    </ClInclude>
+    <ClInclude Include="server\LoginServer.h">
+      <Filter>소스 파일\ClientServer</Filter>
+    </ClInclude>
+    <ClInclude Include="server\Server.h">
+      <Filter>소스 파일\ClientServer</Filter>
+    </ClInclude>
+    <ClInclude Include="server\Typedef_packet.h">
+      <Filter>소스 파일\ClientServer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\stdafx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="server\common.h">
+      <Filter>소스 파일\ClientServer</Filter>
+    </ClInclude>
+    <ClInclude Include="server\GameServer.h">
+      <Filter>소스 파일\ClientServer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\protoc\Game_Packet.pb.h">
+      <Filter>소스 파일\ClientServer\protoc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\protoc\Chat_Packet.pb.h">
+      <Filter>소스 파일\ClientServer\protoc</Filter>
+    </ClInclude>
+    <ClInclude Include="server\ChatServer.h">
+      <Filter>소스 파일\ClientServer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SoundManager.h">
+      <Filter>소스 파일\System\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MovableText.h">
+      <Filter>소스 파일\System\TextID</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Effect.h">
+      <Filter>소스 파일\Object\Character\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Energy.h">
+      <Filter>소스 파일\System\HP</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameResultWindow.h">
+      <Filter>소스 파일\System\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SoundMan.h">
+      <Filter>소스 파일\System\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="server\PacketBuffer.h">
+      <Filter>소스 파일\ClientServer\buffer</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\BaseApplication.cpp">
+      <Filter>소스 파일\System\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game.cpp">
+      <Filter>소스 파일\System\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameRun.cpp">
+      <Filter>소스 파일\System\GameState</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Result.cpp">
+      <Filter>소스 파일\System\GameState</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Keyboard.cpp">
+      <Filter>소스 파일\System\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Mouse.cpp">
+      <Filter>소스 파일\System\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Character.cpp">
+      <Filter>소스 파일\Object\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Skill.cpp">
+      <Filter>소스 파일\Object\Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Effect.cpp">
+      <Filter>소스 파일\Object\Character\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Camera.cpp">
+      <Filter>소스 파일\System\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Map.cpp">
+      <Filter>소스 파일\Object\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Animation.cpp">
+      <Filter>소스 파일\Object\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameLoginWindow.cpp">
+      <Filter>소스 파일\System\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUIBase.cpp">
+      <Filter>소스 파일\System\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameLobbyWindow.cpp">
+      <Filter>소스 파일\System\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameRoomWindow.cpp">
+      <Filter>소스 파일\System\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameRunWindow.cpp">
+      <Filter>소스 파일\System\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\protoc\Lobby_Packet.pb.cc">
+      <Filter>소스 파일\ClientServer\protoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\protoc\Login_Packet.pb.cc">
+      <Filter>소스 파일\ClientServer\protoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\protoc\PACKET.pb.cc">
+      <Filter>소스 파일\ClientServer\protoc</Filter>
+    </ClCompile>
+    <ClCompile Include="server\CServerMain.cpp">
+      <Filter>소스 파일\ClientServer</Filter>
+    </ClCompile>
+    <ClCompile Include="server\LobbyServer.cpp">
+      <Filter>소스 파일\ClientServer</Filter>
+    </ClCompile>
+    <ClCompile Include="server\LoginServer.cpp">
+      <Filter>소스 파일\ClientServer</Filter>
+    </ClCompile>
+    <ClCompile Include="server\Server.cpp">
+      <Filter>소스 파일\ClientServer</Filter>
+    </ClCompile>
+    <ClCompile Include="server\GameServer.cpp">
+      <Filter>소스 파일\ClientServer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\protoc\Game_Packet.pb.cc">
+      <Filter>소스 파일\ClientServer\protoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\protoc\Chat_Packet.pb.cc">
+      <Filter>소스 파일\ClientServer\protoc</Filter>
+    </ClCompile>
+    <ClCompile Include="server\ChatServer.cpp">
+      <Filter>소스 파일\ClientServer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SoundManager.cpp">
+      <Filter>소스 파일\System\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MovableText.cpp">
+      <Filter>소스 파일\System\TextID</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Energy.cpp">
+      <Filter>소스 파일\System\HP</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameResultWindow.cpp">
+      <Filter>소스 파일\System\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SoundMan.cpp">
+      <Filter>소스 파일\System\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="include\stdafx.cpp">
+      <Filter>헤더 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="server\PacketBuffer.cpp">
+      <Filter>소스 파일\ClientServer\buffer</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Game.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="include\Readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="res\Game.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

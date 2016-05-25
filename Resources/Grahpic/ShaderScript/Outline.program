@@ -1,0 +1,16 @@
+vertex_program OutlineExperimentVP cg
+{
+	source VertEdge.cg
+	entry_point EdgeVP
+	profiles vs_1_1 arbvp1
+ 
+	default_params
+	{
+		param_named_auto eyePosition camera_position_object_space
+		param_named_auto worldViewProj worldViewProj_matrix
+ 
+		//
+		// Edge color based on diffuse surface color
+		param_named_auto edgeColor surface_diffuse_colour
+	}
+}

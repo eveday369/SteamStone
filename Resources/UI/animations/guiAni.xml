@@ -1,0 +1,70 @@
+<Animations>
+
+  <AnimationDefinition name="ZSpin" duration="0.3" replayMode="loop">
+  <Affector property="Alpha" interpolator="float">
+      <KeyFrame position="0.0" value="0.9" />
+      <KeyFrame position="1.0" value="0.9" />
+    </Affector>
+    <Affector property="ZRotation" interpolator="float">
+      <KeyFrame position="0.0" value="0" />
+      <KeyFrame position="4.0" value="380" />
+    </Affector>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="ResultMoving1" duration="4.0" replayMode="once">
+    <Affector property="UnifiedXPosition" interpolator="UDim">
+      <KeyFrame position="0.0" value="{-0.5, 0}" />
+      <KeyFrame position="3.0" value="{1.89, 0}" />
+    </Affector>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="ResultMoving2" duration="3.0" replayMode="once">
+    <Affector property="UnifiedXPosition" interpolator="UDim">
+      <KeyFrame position="0.5" value="{1.5, 0}" />
+      <KeyFrame position="2.0" value="{0.42, 0}" />
+    </Affector>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="ResultName" duration="5.0" replayMode="once">
+  <Affector property="YRotation" interpolator="float">
+      <KeyFrame position="0.0" value="0" />
+      <KeyFrame position="3.0" value="380" />
+    </Affector>
+  </AnimationDefinition>
+
+   <AnimationDefinition name="CreditMove1" duration="15.0" replayMode="once">
+    <Affector property="UnifiedYPosition" interpolator="UDim">
+      <KeyFrame position="0.0" value="{ 0.98, 0}" />
+      <KeyFrame position="14.0" value="{ -1.0, 0}" />
+    </Affector>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="CreditMove2" duration="24.0" replayMode="once">
+    <Affector property="UnifiedYPosition" interpolator="UDim">
+      <KeyFrame position="0.0" value="{ 1.0, 0}" />
+      <KeyFrame position="7.5" value="{ 0.98, 0}" />
+      <KeyFrame position="23.0" value="{ -1.0, 0}" />
+    </Affector>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="CreditMove3" duration="34.0" replayMode="once">
+    <Affector property="UnifiedYPosition" interpolator="UDim">
+      <KeyFrame position="0.0" value="{ 1.0, 0}" />
+      <KeyFrame position="16.0" value="{ 0.98, 0}" />
+      <KeyFrame position="33.0" value="{ -1.0, 0}" />
+    </Affector>
+  </AnimationDefinition>
+
+  <AnimationDefinition name="CreditMove4" duration="44.0" replayMode="once">
+    <Affector property="UnifiedYPosition" interpolator="UDim">
+      <KeyFrame position="0.0" value="{ 1.0, 0}" />
+      <KeyFrame position="24.5" value="{ 0.98, 0}" />
+      <KeyFrame position="43.0" value="{ -1.0, 0}" />
+    </Affector>
+  </AnimationDefinition>
+
+</Animations>
+
+
+
+

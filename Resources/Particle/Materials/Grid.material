@@ -1,0 +1,54 @@
+material RedGrid
+{
+	receive_shadows off
+    // first, preferred technique
+    technique
+    {
+        // first pass
+        pass
+        {
+			lighting on
+            ambient 0.0 0.0 0.0 0.0
+            diffuse 0.0 0.0 0.0 0.0
+            specular 0.0 0.0 0.0 0.0
+			emissive 1.0 0.0 0.0 0.0
+		}
+    }
+}
+
+material GreenGrid
+{
+	receive_shadows off
+    // first, preferred technique
+    technique
+    {
+        // first pass
+        pass
+        {
+			lighting on
+            ambient 0.0 0.0 0.0 0.0
+            diffuse 0.0 0.0 0.0 0.0
+            specular 0.0 0.0 0.0 0.0
+			emissive 0.0 1.0 0.0 0.0
+
+        }
+    }
+}
+
+material BlueGrid
+{
+	receive_shadows off
+    // first, preferred technique
+    technique
+    {
+        // first pass
+        pass
+        {
+			lighting on
+            ambient 0.0 0.0 0.0 0.0
+            diffuse 0.0 0.0 0.0 0.0
+            specular 0.0 0.0 0.0 0.0
+			emissive 0.0 0.0 1.0 0.0
+        }
+    }
+}

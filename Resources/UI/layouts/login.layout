@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="Vanilla/StaticImage" Name="LoginWindow" >
+        <Property Name="Font" Value="Malgun-10" />
+        <Property Name="Image" Value="set:Title1 image:full_image" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.00195313,0},{0,0},{1.00196,0},{1,0}}" />
+        <Window Type="Vanilla/StaticImage" Name="LoginWindow/Login" >
+            <Property Name="Font" Value="Malgun-10" />
+            <Property Name="Image" Value="set:Login image:Login" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.35,0},{0.4,0},{0.65,0},{0.8,0}}" />
+            <Window Type="Vanilla/Editbox" Name="LoginWindow/Login/Edit_ID" >
+                <Property Name="Font" Value="Malgun-10" />
+                <Property Name="MaxTextLength" Value="16" />
+                <Property Name="UnifiedAreaRect" Value="{{0.37,0},{0.317448,0},{0.9,0},{0.417448,0}}" />
+                <Property Name="TextParsingEnabled" Value="False" />
+            </Window>
+            <Window Type="Vanilla/Editbox" Name="LoginWindow/Login/Edit_PW" >
+                <Property Name="Font" Value="Malgun-10" />
+                <Property Name="MaxTextLength" Value="16" />
+                <Property Name="UnifiedAreaRect" Value="{{0.37,0},{0.522552,0},{0.9,0},{0.622552,0}}" />
+                <Property Name="TextParsingEnabled" Value="False" />
+            </Window>
+            <Window Type="Vanilla/Button" Name="LoginWindow/Login/Button_Apply" >
+                <Property Name="Font" Value="Malgun-10" />
+                <Property Name="HoverImage" Value="set:Login image:Login_Hover" />
+                <Property Name="NormalImage" Value="set:Login image:Login_Normal" />
+                <Property Name="PushedImage" Value="set:Login image:Login_Push" />
+                <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.75,0},{0.34,0},{0.86,0}}" />
+            </Window>
+            <Window Type="Vanilla/Button" Name="LoginWindow/Login/Button_Quit" >
+                <Property Name="Font" Value="Malgun-10" />
+                <Property Name="HoverImage" Value="set:Login image:Exit_Hover" />
+                <Property Name="NormalImage" Value="set:Login image:Exit_Normal" />
+                <Property Name="PushedImage" Value="set:Login image:Exit_Push" />
+                <Property Name="UnifiedAreaRect" Value="{{0.66,0},{0.75,0},{0.9,0},{0.86,0}}" />
+            </Window>
+            <Window Type="Vanilla/Button" Name="LoginWindow/Login/Button_Join" >
+                <Property Name="Font" Value="Malgun-10" />
+                <Property Name="HoverImage" Value="set:Login image:Join_Hover" />
+                <Property Name="NormalImage" Value="set:Login image:Join_Normal" />
+                <Property Name="PushedImage" Value="set:Login image:Join_Push" />
+                <Property Name="UnifiedAreaRect" Value="{{0.38,0},{0.75,0},{0.62,0},{0.86,0}}" />
+            </Window>
+            <Window Type="Vanilla/StaticImage" Name="LoginWindow/Login/ID" >
+                <Property Name="Image" Value="set:Login image:Text_ID" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.327448,0},{0.21,0},{0.407448,0}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="Vanilla/StaticImage" Name="LoginWindow/Login/PW" >
+                <Property Name="Image" Value="set:Login image:Text_Password" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.532552,0},{0.33,0},{0.612552,0}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="Vanilla/StaticImage" Name="LoginWindow/Login/Text_Login" >
+                <Property Name="Image" Value="set:Login image:Text_Login" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0.32,0},{0.0934896,0},{0.68,0},{0.209766,0}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+        </Window>
+        <Window Type="Vanilla/StaticImage" Name="LoginWindow/Progress" >
+            <Property Name="Font" Value="Malgun-10" />
+            <Property Name="Image" Value="set:Login image:Progress" />
+            <Property Name="Visible" Value="False" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.37,0},{0.44,0},{0.63,0},{0.74,0}}" />
+            <Window Type="Vanilla/StaticText" Name="LoginWindow/Progress/Text_Status" >
+                <Property Name="Font" Value="Malgun-10" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="HorzFormatting" Value="WordWrapCentred" />
+                <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.37,0},{0.9,0},{0.67,0}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="Vanilla/Button" Name="LoginWindow/Progress/Button_OK" >
+                <Property Name="Font" Value="Malgun-10" />
+                <Property Name="HoverImage" Value="set:Login image:OK_Hover" />
+                <Property Name="NormalImage" Value="set:Login image:OK_Normal" />
+                <Property Name="PushedImage" Value="set:Login image:OK_Push" />
+                <Property Name="UnifiedAreaRect" Value="{{0.35,0},{0.74,0},{0.65,0},{0.9,0}}" />
+            </Window>
+            <Window Type="Vanilla/StaticImage" Name="LoginWindow/Progress/Text_Progress" >
+                <Property Name="Image" Value="set:Login image:Text_Progress" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0.3,0},{0.12,0},{0.7,0},{0.28,0}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+        </Window>
+        <Window Type="Vanilla/StaticImage" Name="LoginWindow/Error" >
+            <Property Name="Font" Value="Malgun-10" />
+            <Property Name="Image" Value="set:Login image:Error" />
+            <Property Name="Visible" Value="False" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.37,0},{0.44,0},{0.63,0},{0.74,0}}" />
+            <Window Type="Vanilla/Button" Name="LoginWindow/Error/Button_OK" >
+                <Property Name="Font" Value="Malgun-10" />
+                <Property Name="HoverImage" Value="set:Login image:OK_Hover" />
+                <Property Name="NormalImage" Value="set:Login image:OK_Normal" />
+                <Property Name="PushedImage" Value="set:Login image:OK_Push" />
+                <Property Name="UnifiedAreaRect" Value="{{0.35,0},{0.74,0},{0.65,0},{0.9,0}}" />
+            </Window>
+            <Window Type="Vanilla/StaticText" Name="LoginWindow/Error/Text_Status" >
+                <Property Name="Font" Value="Malgun-10" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="HorzFormatting" Value="WordWrapCentred" />
+                <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.37,0},{0.9,0},{0.67,0}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="Vanilla/StaticImage" Name="LoginWindow/Error/Text_Error" >
+                <Property Name="Image" Value="set:Login image:Text_Error" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0.3,0},{0.12,0},{0.7,0},{0.28,0}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+        </Window>
+        <Window Type="Vanilla/StaticImage" Name="LoginWindow/Join" >
+            <Property Name="Font" Value="Malgun-10" />
+            <Property Name="Text" Value="가입" />
+            <Property Name="Image" Value="set:Login image:Join" />
+            <Property Name="Visible" Value="False" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.4,0},{0.465104,0},{0.6,0},{0.715104,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="Vanilla/StaticImage" Name="LoginWindow/Join/Text_ID" >
+                <Property Name="Font" Value="Malgun-10" />
+                <Property Name="Image" Value="set:Login image:Text_ID" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.3,0},{0.21,0},{0.4,0}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="Vanilla/StaticImage" Name="LoginWindow/Join/Text_PW" >
+                <Property Name="Font" Value="Malgun-10" />
+                <Property Name="Image" Value="set:Login image:Text_Password" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.552083,0},{0.35,0},{0.652083,0}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="Vanilla/Editbox" Name="LoginWindow/Join/Edit_ID" >
+                <Property Name="Font" Value="Malgun-10" />
+                <Property Name="MaxTextLength" Value="1073741823" />
+                <Property Name="UnifiedAreaRect" Value="{{0.37,0},{0.29,0},{0.9,0},{0.41,0}}" />
+                <Property Name="TextParsingEnabled" Value="False" />
+            </Window>
+            <Window Type="Vanilla/Editbox" Name="LoginWindow/Join/Edit_PW" >
+                <Property Name="Font" Value="Malgun-10" />
+                <Property Name="MaxTextLength" Value="1073741823" />
+                <Property Name="UnifiedAreaRect" Value="{{0.37,0},{0.542083,0},{0.9,0},{0.662083,0}}" />
+                <Property Name="TextParsingEnabled" Value="False" />
+            </Window>
+            <Window Type="Vanilla/Button" Name="LoginWindow/Join/Button_OK" >
+                <Property Name="Font" Value="Malgun-10" />
+                <Property Name="HoverImage" Value="set:Login image:OK_Hover" />
+                <Property Name="NormalImage" Value="set:Login image:OK_Normal" />
+                <Property Name="PushedImage" Value="set:Login image:OK_Push" />
+                <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.762083,0},{0.4,0},{0.912083,0}}" />
+            </Window>
+            <Window Type="Vanilla/Button" Name="LoginWindow/Join/Button_Cancel" >
+                <Property Name="Font" Value="Malgun-10" />
+                <Property Name="HoverImage" Value="set:Login image:Cancel_Hover" />
+                <Property Name="NormalImage" Value="set:Login image:Cancel_Normal" />
+                <Property Name="PushedImage" Value="set:Login image:Cancel_Push" />
+                <Property Name="UnifiedAreaRect" Value="{{0.6,0},{0.762083,0},{0.9,0},{0.912083,0}}" />
+            </Window>
+            <Window Type="Vanilla/StaticImage" Name="LoginWindow/Join/Text_Join" >
+                <Property Name="Image" Value="set:Login image:Text_Join" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0.35,0},{0.05,0},{0.65,0},{0.16,0}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+        </Window>
+        <Window Type="Vanilla/StaticImage" Name="LoginWindow/Logo" >
+            <Property Name="Image" Value="set:Title image:full_image" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.306444,0},{0.0841146,0},{0.658983,0},{0.352343,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+    </Window>
+</GUILayout>

@@ -1,0 +1,167 @@
+particle_system Atomic
+{
+	material Particles/Fireball.001
+	particle_width 100.0
+	particle_height 100.0
+	quota 2000
+	cull_each false
+	sorted false
+	local_space false
+	iteration_interval 0.0
+	nonvisible_update_timeout 0.0
+	billboard_type point
+	billboard_origin center
+	billboard_rotation_type vertex
+	point_rendering false
+	accurate_facing false
+
+	emitter HollowEllipsoid
+	{
+		position 0.0 100.0 0.0
+		direction 0.0 0.0 1.0
+		angle 0.0
+		width 150.0
+		height 20.0
+		depth 150.0
+		inner_width 0.5
+		inner_height 0.5
+		inner_depth 0.5
+		emission_rate 10.0
+		velocity_min 1.0
+		velocity_max 1.0
+		time_to_live_min 5.0
+		time_to_live_max 5.0
+		duration_min 0.0
+		duration_max 0.0
+		repeat_delay_min 0.0
+		repeat_delay_max 0.0
+		colour_range_start 1 1 1 1
+		colour_range_end 1 1 1 1
+	}
+
+	emitter Point
+	{
+		position 0.0 -200.0 0.0
+		direction 0.0 1.0 0.0
+		angle 1.2
+		emission_rate 50.67
+		velocity_min 200.0
+		velocity_max 300.0
+		time_to_live_min 1.19
+		time_to_live_max 4.92
+		duration_min 0.0
+		duration_max 0.0
+		repeat_delay_min 0.0
+		repeat_delay_max 0.0
+		colour_range_start 0 0 0 1
+		colour_range_end 0 0 0 1
+	}
+
+	emitter HollowEllipsoid
+	{
+		position 0.0 -200.0 0.0
+		direction 0.0 0.0 1.0
+		angle 180.0
+		width 300.0
+		height 20.0
+		depth 300.0
+		inner_width 0.9
+		inner_height 0.9
+		inner_depth 0.9
+		emission_rate 2500.0
+		velocity_min 300.0
+		velocity_max 300.0
+		time_to_live_min 0.1
+		time_to_live_max 0.2
+		duration_min 0.0
+		duration_max 0.0
+		repeat_delay_min 0.0
+		repeat_delay_max 0.0
+		colour_range_start 1 1 1 1
+		colour_range_end 0 0 0 1
+	}
+
+	emitter HollowEllipsoid
+	{
+		position 0.0 650.0 0.0
+		direction 0.0 0.0 1.0
+		angle 0.0
+		width 1400.0
+		height 500.0
+		depth 1400.0
+		inner_width 0.5
+		inner_height 0.5
+		inner_depth 0.5
+		emission_rate 200.0
+		velocity_min 1.0
+		velocity_max 1.0
+		time_to_live_min 5.0
+		time_to_live_max 5.0
+		duration_min 0.0
+		duration_max 0.0
+		repeat_delay_min 0.0
+		repeat_delay_max 0.0
+		colour_range_start 1 1 1 1
+		colour_range_end 1 1 1 1
+	}
+
+	emitter HollowEllipsoid
+	{
+		position 0.0 -200.0 0.0
+		direction 0.0 0.0 1.0
+		angle 0.0
+		width 1800.0
+		height 1.0
+		depth 1800.0
+		inner_width 0.5
+		inner_height 0.5
+		inner_depth 0.5
+		emission_rate 50.0
+		velocity_min 1.0
+		velocity_max 1.0
+		time_to_live_min 5.0
+		time_to_live_max 5.0
+		duration_min 0.0
+		duration_max 0.0
+		repeat_delay_min 0.0
+		repeat_delay_max 0.0
+		colour_range_start 1 1 1 1
+		colour_range_end 1 1 1 1
+	}
+
+	affector DirectionRandomiser
+	{
+		randomness 40.0
+		scope 100.0
+		keep_velocity false
+	}
+
+	affector Scaler
+	{
+		rate 37.65
+	}
+
+	affector ColourInterpolator
+	{
+		time0 0.0
+		colour0 0 0 0 1
+		time1 0.2
+		colour1 1 0.137255 0.14902 1
+		time2 0.4
+		colour2 0.917647 1 0.0117647 1
+		time3 0.6
+		colour3 0 0.14902 1 1
+		time4 0.8
+		colour4 0 1 1 1
+		time5 1.0
+		colour5 0 0 0 1
+	}
+
+	affector Rotator
+	{
+		rotation_speed_range_start 20.0
+		rotation_speed_range_end 100.0
+		rotation_range_start 0.0
+		rotation_range_end 180.0
+	}
+}

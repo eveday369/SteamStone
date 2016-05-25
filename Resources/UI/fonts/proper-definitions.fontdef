@@ -1,0 +1,42 @@
+StarWars
+{
+   // Now this one I agree with ;)
+   // A Star Wars font :)
+   type       truetype
+   source       solo5.ttf
+   size       16
+   resolution    96
+}
+
+BlueHighway-8
+{
+   type       truetype
+   source       bluehigh.ttf
+   size       8
+   resolution    96
+}
+
+BlueHighway-16
+{
+   type       truetype
+   source       bluehigh.ttf
+   size       16
+   resolution    96
+}
+
+BlueHighway-12
+{
+   type       truetype
+   source       bluehigh.ttf
+   size       12
+   resolution    96
+}
+
+HoHoFont
+{
+	type		truetype
+	source      HoHoFont.ttf
+	size		18
+	resolution  96
+//	code_points 33-167 4352-4607 12592-12687 44032-55203
+}

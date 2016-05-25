@@ -1,0 +1,87 @@
+particle_system Bubbles
+{
+	material Particles/Special.000
+	particle_width 100.0
+	particle_height 100.0
+	quota 300
+	cull_each false
+	sorted false
+	local_space false
+	iteration_interval 0.0
+	nonvisible_update_timeout 0.0
+	billboard_type point
+	billboard_origin center
+	billboard_rotation_type vertex
+	point_rendering false
+	accurate_facing false
+
+	emitter Box
+	{
+		position 0.0 0.0 0.0
+		direction 0.0 0.0 1.0
+		angle 180.0
+		width 100.0
+		height 100.0
+		depth 100.0
+		emission_rate 126.67
+		velocity_min 6.95
+		velocity_max 68.32
+		time_to_live_min 0.85
+		time_to_live_max 5.0
+		duration_min 0.0
+		duration_max 0.0
+		repeat_delay_min 0.0
+		repeat_delay_max 0.0
+		colour_range_start 1 1 1 1
+		colour_range_end 1 1 1 1
+	}
+
+	affector DirectionRandomiser
+	{
+		randomness 2000.0
+		scope 100.0
+		keep_velocity false
+	}
+
+	affector ColourInterpolator
+	{
+		time0 0.0
+		colour0 0.945098 0.368627 0.901961 1
+		time1 0.2
+		colour1 0.423529 0.513726 0.694118 1
+		time2 0.4
+		colour2 0.52549 0.678431 0.796078 1
+		time3 0.6
+		colour3 0.454902 0.498039 0.85098 1
+		time4 0.8
+		colour4 0.505882 0.533333 0.937255 1
+		time5 1.0
+		colour5 0 0 0 1
+	}
+
+	affector Scaler
+	{
+		rate 38.82
+	}
+
+	affector DeflectorPlane
+	{
+		plane_point 0 -200 0
+		plane_normal 0 1 0
+		bounce 4.06
+	}
+
+	affector LinearForce
+	{
+		force_vector 0.0 -100.0 0.0
+		force_application add
+	}
+
+	affector Rotator
+	{
+		rotation_speed_range_start 100.0
+		rotation_speed_range_end 200.0
+		rotation_range_start 0.0
+		rotation_range_end 180.0
+	}
+}

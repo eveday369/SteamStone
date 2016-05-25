@@ -1,0 +1,19 @@
+material Effect/Effect1
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			scene_blend alpha_blend
+			cull_hardware none
+			cull_software none
+
+			texture_unit
+			{
+				anim_texture sprite.png 5 2
+				filtering none
+			}
+		}
+	}
+}

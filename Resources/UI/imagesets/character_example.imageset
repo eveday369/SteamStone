@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+
+<Imageset Name="character_example" Imagefile="character_example.png" NativeHorzRes="800" NativeVertRes="900" AutoScaled="false" >
+    <Image Name="gunner" XPos="18" YPos="320" Width="764" Height="258" />
+    <Image Name="psyker" XPos="18" YPos="611" Width="764" Height="258" />
+    <Image Name="walker" XPos="18" YPos="29" Width="764" Height="258" />
+</Imageset>

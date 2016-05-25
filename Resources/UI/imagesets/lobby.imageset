@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Imageset Name="Lobby" Imagefile="lobby.png" NativeHorzRes="1280" NativeVertRes="1024" AutoScaled="true" >
+    <Image Name="Noti" XPos="667" YPos="330" Width="127" Height="40" />
+    <Image Name="Chat_List" XPos="8" YPos="592" Width="918" Height="385" />
+    <Image Name="Exit_Push" XPos="266" YPos="341" Width="247" Height="102" />
+    <Image Name="Next_Push" XPos="1122" YPos="663" Width="45" Height="44" />
+    <Image Name="Prev_Push" XPos="1003" YPos="662" Width="45" Height="44" />
+    <Image Name="Scroll_Up" XPos="933" YPos="600" Width="62" Height="62" />
+    <Image Name="Send_Push" XPos="1058" YPos="854" Width="118" Height="53" />
+    <Image Name="Text_Name" XPos="345" YPos="1057" Width="60" Height="34" />
+    <Image Name="Entry_Push" XPos="267" YPos="123" Width="245" Height="103" />
+    <Image Name="Exit_Hover" XPos="5" YPos="453" Width="247" Height="102" />
+    <Image Name="Next_Hover" XPos="1122" YPos="715" Width="45" Height="44" />
+    <Image Name="Prev_Hover" XPos="1003" YPos="714" Width="45" Height="44" />
+    <Image Name="Room_Hover" XPos="591" YPos="171" Width="598" Height="144" />
+    <Image Name="Scroll_Bar" XPos="933" YPos="694" Width="62" Height="1" />
+    <Image Name="Send_Hover" XPos="1059" YPos="914" Width="118" Height="53" />
+    <Image Name="Create_Push" XPos="9" YPos="123" Width="245" Height="103" />
+    <Image Name="Entry_Hover" XPos="267" YPos="233" Width="245" Height="103" />
+    <Image Name="Exit_Normal" XPos="6" YPos="341" Width="247" Height="102" />
+    <Image Name="Next_Normal" XPos="1122" YPos="609" Width="45" Height="44" />
+    <Image Name="Prev_Normal" XPos="1003" YPos="608" Width="45" Height="44" />
+    <Image Name="Room_Normal" XPos="592" YPos="14" Width="597" Height="144" />
+    <Image Name="Scroll_Ball" XPos="995" YPos="792" Width="41" Height="41" />
+    <Image Name="Scroll_Down" XPos="933" YPos="875" Width="62" Height="62" />
+    <Image Name="Send_Normal" XPos="1058" YPos="792" Width="118" Height="53" />
+    <Image Name="Text_Create" XPos="344" YPos="1005" Width="169" Height="41" />
+    <Image Name="Window_Noti" XPos="600" YPos="376" Width="260" Height="200" />
+    <Image Name="Create_Hover" XPos="9" YPos="233" Width="245" Height="103" />
+    <Image Name="Entry_Normal" XPos="267" YPos="14" Width="245" Height="103" />
+    <Image Name="Refresh_Push" XPos="1030" YPos="469" Width="128" Height="43" />
+    <Image Name="Create_Normal" XPos="9" YPos="14" Width="245" Height="103" />
+    <Image Name="Refresh_Hover" XPos="1030" YPos="519" Width="128" Height="43" />
+    <Image Name="Window_Create" XPos="9" YPos="990" Width="316" Height="461" />
+    <Image Name="Refresh_Normal" XPos="1030" YPos="416" Width="128" Height="43" />
+</Imageset>

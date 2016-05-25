@@ -1,0 +1,46 @@
+particle_system Blind
+{
+	material Particles/Sun.000
+	particle_width 400.0
+	particle_height 100.0
+	quota 800
+	cull_each false
+	sorted false
+	local_space false
+	iteration_interval 0.0
+	nonvisible_update_timeout 0.0
+	billboard_type point
+	billboard_origin center
+	billboard_rotation_type vertex
+	point_rendering false
+	accurate_facing false
+
+	emitter Box
+	{
+		position 0.0 250.0 0.0
+		direction 0.0 0.0 1.0
+		angle 180.0
+		width 100.0
+		height 500.0
+		depth 100.0
+		emission_rate 500.0
+		velocity_min 1.0
+		velocity_max 2000.0
+		time_to_live_min 1.32
+		time_to_live_max 1.66
+		duration_min 0.0
+		duration_max 0.0
+		repeat_delay_min 0.0
+		repeat_delay_max 0.0
+		colour_range_start 1 1 1 1
+		colour_range_end 1 0 0.0156863 1
+	}
+
+	affector Rotator
+	{
+		rotation_speed_range_start 2000.0
+		rotation_speed_range_end 5000.0
+		rotation_range_start 0.0
+		rotation_range_end 180.0
+	}
+}

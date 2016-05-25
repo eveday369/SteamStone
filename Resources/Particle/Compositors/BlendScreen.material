@@ -1,0 +1,127 @@
+material Ogre/Compositor/BlendScreenRed
+{
+	technique
+	{
+		pass
+		{
+			cull_hardware none
+			cull_software none
+			lighting off
+			depth_check off
+
+			vertex_program_ref Ogre/Compositor/StdQuad_GLSL_vp
+			{
+			}
+
+			fragment_program_ref Ogre/Compositor/QuadBlendScreen_GLSL_fp
+			{
+				param_named red float 1.0
+				param_named green float 0.0
+				param_named blue float 0.0
+			}
+
+			texture_unit TEX0
+			{
+				tex_coord_set 0
+				tex_address_mode clamp
+				filtering trilinear
+			}
+		}
+	}
+}
+
+material Ogre/Compositor/BlendScreenGreen
+{
+	technique
+	{
+		pass
+		{
+			cull_hardware none
+			cull_software none
+			lighting off
+			depth_check off
+
+			vertex_program_ref Ogre/Compositor/StdQuad_GLSL_vp
+			{
+			}
+
+			fragment_program_ref Ogre/Compositor/QuadBlendScreen_GLSL_fp
+			{
+				param_named red float 0.0
+				param_named green float 1.0
+				param_named blue float 0.0
+			}
+
+			texture_unit TEX0
+			{
+				tex_coord_set 0
+				tex_address_mode clamp
+				filtering trilinear
+			}
+		}
+	}
+}
+
+material Ogre/Compositor/BlendScreenBlue
+{
+	technique
+	{
+		pass
+		{
+			cull_hardware none
+			cull_software none
+			lighting off
+			depth_check off
+
+			vertex_program_ref Ogre/Compositor/StdQuad_GLSL_vp
+			{
+			}
+
+			fragment_program_ref Ogre/Compositor/QuadBlendScreen_GLSL_fp
+			{
+				param_named red float 0.0
+				param_named green float 0.0
+				param_named blue float 1.0
+			}
+
+			texture_unit TEX0
+			{
+				tex_coord_set 0
+				tex_address_mode clamp
+				filtering trilinear
+			}
+		}
+	}
+}
+
+material Ogre/Compositor/BlendScreenCyan
+{
+	technique
+	{
+		pass
+		{
+			cull_hardware none
+			cull_software none
+			lighting off
+			depth_check off
+
+			vertex_program_ref Ogre/Compositor/StdQuad_GLSL_vp
+			{
+			}
+
+			fragment_program_ref Ogre/Compositor/QuadBlendScreen_GLSL_fp
+			{
+				param_named red float 0.0
+				param_named green float 1.0
+				param_named blue float 1.0
+			}
+
+			texture_unit TEX0
+			{
+				tex_coord_set 0
+				tex_address_mode clamp
+				filtering trilinear
+			}
+		}
+	}
+}

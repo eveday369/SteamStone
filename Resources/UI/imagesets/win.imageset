@@ -1,0 +1,4 @@
+<Imageset AutoScaled="true" Imagefile="win.png" Name="Win" NativeHorzRes="1280" NativeVertRes="1024" Version="2">
+    <Image Height="591" Name="Win" Width="1093" XPos="28" YPos="46" />
+    <Image Height="591" Name="Lose" Width="1093" XPos="28" YPos="747" />
+</Imageset>

@@ -1,0 +1,49 @@
+material some/random/material/with/rim/effect
+{
+   technique
+   {
+      pass
+      {
+         texture_unit
+         {
+            texture walkeridle.psd
+         }
+ 
+         //rim lighting
+         texture_unit
+         {
+            cubic_texture rim.dds combinedUVW
+            tex_address_mode clamp
+            colour_op_ex add src_texture src_current
+            colour_op_multipass_fallback one one
+            env_map cubic_normal
+         }
+      }
+   }
+}
+
+//
+// Optional pass for experimental edge outlining.
+abstract pass OutlineExperiment
+{
+	//
+	// Diffuse tweaks outline color.
+	diffuse 0 0 0
+ 
+	//
+	// Multiplier for how far the black mesh protrusion is, for edge size.
+	set $edgeScale 0.3
+ 
+	//
+	// Multiplier for how far the black edge mesh should be pushed back to reduce Z fighting.
+	//
+	// Best value is greater for large meshes and smaller for small meshes. You may have to
+	// tweak this variable dramatically.
+	set $sinkScale 1
+ 
+	vertex_program_ref OutlineExperimentVP
+	{
+		param_named edgeScale float $edgeScale
+		param_named sinkScale float $sinkScale
+	}
+}

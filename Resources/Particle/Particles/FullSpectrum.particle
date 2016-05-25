@@ -1,0 +1,65 @@
+particle_system FullSpectrum
+{
+	material Particles/Special.000
+	particle_width 250.0
+	particle_height 250.0
+	quota 300
+	cull_each false
+	sorted false
+	local_space false
+	iteration_interval 0.0
+	nonvisible_update_timeout 0.0
+	billboard_type point
+	billboard_origin center
+	billboard_rotation_type vertex
+	point_rendering false
+	accurate_facing false
+
+	emitter Point
+	{
+		position 0.0 0.0 0.0
+		direction 0.0 1.0 0.0
+		angle 45.6
+		emission_rate 200.0
+		velocity_min 100.0
+		velocity_max 300.0
+		time_to_live_min 3.0
+		time_to_live_max 3.0
+		duration_min 1.0
+		duration_max 1.0
+		repeat_delay_min 2.0
+		repeat_delay_max 2.0
+		colour_range_start 1 1 1 1
+		colour_range_end 1 1 1 1
+	}
+
+	affector LinearForce
+	{
+		force_vector 0.0 -100.0 0.0
+		force_application add
+	}
+
+	affector Rotator
+	{
+		rotation_speed_range_start 100.0
+		rotation_speed_range_end 500.0
+		rotation_range_start 0.0
+		rotation_range_end 180.0
+	}
+
+	affector Scaler
+	{
+		rate -25.0
+	}
+
+	affector LinearForce
+	{
+		force_vector 100.0 -300.0 100.0
+		force_application add
+	}
+
+	affector ColourImage
+	{
+		image ./Resources/Textures/FullSpectrum.png
+	}
+}

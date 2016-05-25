@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="Vanilla/StaticImage" Name="Background" >
+        <Property Name="Font" Value="Malgun-10" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+        <Window Type="Vanilla/StaticImage" Name="Background/Character1" >
+            <Property Name="Font" Value="Malgun-10" />
+            <Property Name="UnifiedAreaRect" Value="{{0.02,0},{0.1,0},{0.23,0},{0.6,0}}" />
+        </Window>
+        <Window Type="Vanilla/StaticImage" Name="Background/Character2" >
+            <Property Name="Font" Value="Malgun-10" />
+            <Property Name="UnifiedAreaRect" Value="{{0.27,0},{0.1,0},{0.48,0},{0.6,0}}" />
+        </Window>
+        <Window Type="Vanilla/StaticImage" Name="Background/Character3" >
+            <Property Name="Font" Value="Malgun-10" />
+            <Property Name="UnifiedAreaRect" Value="{{0.52,0},{0.1,0},{0.73,0},{0.6,0}}" />
+        </Window>
+        <Window Type="Vanilla/StaticImage" Name="Background/Character4" >
+            <Property Name="Font" Value="Malgun-10" />
+            <Property Name="UnifiedAreaRect" Value="{{0.77,0},{0.1,0},{0.98,0},{0.6,0}}" />
+        </Window>
+        <Window Type="Vanilla/FrameWindow" Name="Background/Chat" >
+            <Property Name="Font" Value="Malgun-10" />
+            <Property Name="Alpha" Value="0" />
+            <Property Name="TitlebarFont" Value="Malgun-10" />
+            <Property Name="TitlebarEnabled" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0.02,0},{0.65,0},{0.5,0},{0.98,0}}" />
+            <Window Type="Vanilla/MultiLineEditbox" Name="Background/Chat/Output" >
+                <Property Name="Font" Value="Malgun-10" />
+                <Property Name="Text" >
+</Property>
+                <Property Name="MaxTextLength" Value="1073741823" />
+                <Property Name="UnifiedAreaRect" Value="{{0.4,0},{0.4,0},{0.65,0},{0.65,0}}" />
+                <Property Name="TextParsingEnabled" Value="False" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

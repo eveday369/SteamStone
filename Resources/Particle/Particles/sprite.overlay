@@ -1,0 +1,12 @@
+Attack1
+{
+	zorder 105
+	container Panel(Effect)
+	{
+		left 0
+		top 0
+		width 0
+		height 0
+		material Effect/Effect1
+	}
+}

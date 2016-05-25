@@ -1,0 +1,95 @@
+compositor BlendScreenRed
+{
+    technique
+    {
+        texture rt_output target_width target_height PF_R8G8B8
+
+        target rt_output
+        {
+            input previous
+        }
+
+        target_output
+        {
+            input none
+
+            pass render_quad
+            {
+                material Ogre/Compositor/BlendScreenRed
+                input 0 rt_output
+            }
+        }
+    }
+}
+
+compositor BlendScreenGreen
+{
+    technique
+    {
+        texture rt_output target_width target_height PF_R8G8B8
+
+        target rt_output
+        {
+            input previous
+        }
+
+        target_output
+        {
+            input none
+
+            pass render_quad
+            {
+                material Ogre/Compositor/BlendScreenGreen
+                input 0 rt_output
+            }
+        }
+    }
+}
+
+compositor BlendScreenBlue
+{
+    technique
+    {
+        texture rt_output target_width target_height PF_R8G8B8
+
+        target rt_output
+        {
+            input previous
+        }
+
+        target_output
+        {
+            input none
+
+            pass render_quad
+            {
+                material Ogre/Compositor/BlendScreenBlue
+                input 0 rt_output
+            }
+        }
+    }
+}
+
+compositor BlendScreenCyan
+{
+    technique
+    {
+        texture rt_output target_width target_height PF_R8G8B8
+
+        target rt_output
+        {
+            input previous
+        }
+
+        target_output
+        {
+            input none
+
+            pass render_quad
+            {
+                material Ogre/Compositor/BlendScreenCyan
+                input 0 rt_output
+            }
+        }
+    }
+}

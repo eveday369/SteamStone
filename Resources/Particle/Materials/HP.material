@@ -1,0 +1,31 @@
+material State/HpBar
+{
+	technique
+	{
+		pass
+		{
+			scene_blend alpha_blend
+			depth_write off
+			texture_unit
+			{
+				texture Bars2.png
+			}
+		}
+	}
+}
+
+material State/HpBackGround
+{
+	technique
+	{
+		pass
+		{
+			scene_blend alpha_blend
+			depth_write off
+			texture_unit
+			{
+				texture HpBack.png
+			}
+		}
+	}
+}

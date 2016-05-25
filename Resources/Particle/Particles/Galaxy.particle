@@ -1,0 +1,107 @@
+particle_system Galaxy
+{
+	material Particles/Flare.001
+	particle_width 8.23999977111816
+	particle_height 5.88000011444092
+	quota 2000
+	cull_each true
+	sorted true
+	local_space false
+	iteration_interval 0.0
+	nonvisible_update_timeout 0.0
+	billboard_type point
+	billboard_origin bottom_right
+	billboard_rotation_type vertex
+	point_rendering false
+	accurate_facing false
+
+	emitter HollowEllipsoid
+	{
+		position -500.0 0.0 -500.0
+		direction 0.0 0.0 1.0
+		angle 0.0
+		width 999.99
+		height 999.99
+		depth 999.99
+		inner_width 0.99
+		inner_height 0.99
+		inner_depth 0.99
+		emission_rate 200.0
+		velocity_min 1.0
+		velocity_max 1.0
+		time_to_live_min 5.0
+		time_to_live_max 5.0
+		duration_min 0.0
+		duration_max 0.0
+		repeat_delay_min 0.0
+		repeat_delay_max 0.0
+		colour_range_start 1 1 1 1
+		colour_range_end 1 1 1 1
+	}
+
+	emitter HollowEllipsoid
+	{
+		position 500.0 0.0 500.0
+		direction 0.0 0.0 1.0
+		angle 0.0
+		width 200.0
+		height 200.0
+		depth 200.0
+		inner_width 0.5
+		inner_height 0.5
+		inner_depth 0.5
+		emission_rate 50.0
+		velocity_min 1.0
+		velocity_max 1.0
+		time_to_live_min 5.0
+		time_to_live_max 5.0
+		duration_min 0.0
+		duration_max 0.0
+		repeat_delay_min 0.0
+		repeat_delay_max 0.0
+		colour_range_start 1 1 1 1
+		colour_range_end 1 1 1 1
+	}
+
+	affector Scaler
+	{
+		rate -57.65
+	}
+
+	affector Rotator
+	{
+		rotation_speed_range_start 10.0
+		rotation_speed_range_end 100.0
+		rotation_range_start 0.0
+		rotation_range_end 100.0
+	}
+
+	affector ColourFader2
+	{
+		red1 -1.0
+		green1 0.04
+		blue1 1.0
+		alpha1 0.04
+		red2 0.33
+		green2 -1.0
+		blue2 0.77
+		alpha2 -0.17
+		state_change 1.68
+	}
+
+	affector ColourInterpolator
+	{
+		time0 0.0
+		colour0 0.992157 0.278431 0.568627 1
+		time1 0.2
+		colour1 0.843137 0.109804 0.6 1
+		time2 0.4
+		colour2 0.827451 0.698039 0.180392 1
+		time3 0.6
+		colour3 0.0117647 0.301961 0.635294 1
+		time4 0.8
+		colour4 0.8 0.113725 0.294118 1
+		time5 1.0
+		colour5 0 0 0 1
+	}
+}

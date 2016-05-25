@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="DefaultWindow" Name="Run" >
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+        <Window Type="DefaultWindow" Name="Run/Time" >
+            <Property Name="Font" Value="Malgun-10" />
+            <Property Name="UnifiedAreaRect" Value="{{0.45,0},{0.01,0},{0.55,0},{0.1,0}}" />
+            <Window Type="Vanilla/StaticImage" Name="Run/Time/Time" >
+                <Property Name="Font" Value="Malgun-10" />
+                <Property Name="Image" Value="set:Ingame image:Time" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{0.49,0}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="Vanilla/StaticImage" Name="Run/Time/Hundred" >
+                <Property Name="Font" Value="Malgun-10" />
+                <Property Name="Image" Value="set:Ingame image:Time_0" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0.125,0},{0.51,0},{0.365,0},{1,0}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="Vanilla/StaticImage" Name="Run/Time/Ten" >
+                <Property Name="Font" Value="Malgun-10" />
+                <Property Name="Image" Value="set:Ingame image:Time_0" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0.375,0},{0.51,0},{0.615,0},{1,0}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="Vanilla/StaticImage" Name="Run/Time/One" >
+                <Property Name="Font" Value="Malgun-10" />
+                <Property Name="Image" Value="set:Ingame image:Time_0" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0.625,0},{0.51,0},{0.875,0},{1,0}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Run/Ally" >
+            <Property Name="Font" Value="Malgun-10" />
+            <Property Name="Visible" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.01,0},{0.2,0},{0.2,0},{0.4,0}}" />
+            <Window Type="DefaultWindow" Name="Run/Ally/Player1" >
+                <Property Name="Font" Value="Malgun-10" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{0.33,0}}" />
+                <Window Type="Vanilla/StaticText" Name="Run/Ally/Player1/Name" >
+                    <Property Name="Font" Value="Malgun-10" />
+                    <Property Name="Text" Value="플레이어" />
+                    <Property Name="HorzExtent" Value="68" />
+                    <Property Name="VertExtent" Value="22.6945" />
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="FrameEnabled" Value="False" />
+                    <Property Name="HorzFormatting" Value="HorzCentred" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.2,0},{0.2,0},{1,0},{0.5,0}}" />
+                    <Property Name="BackgroundEnabled" Value="False" />
+                </Window>
+                <Window Type="Vanilla/StaticImage" Name="Run/Ally/Player1/HP" >
+                    <Property Name="Image" Value="set:Ingame image:HP_Bar" />
+                    <Property Name="FrameEnabled" Value="False" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.2,0},{0.5,0},{1,0},{0.8,0}}" />
+                </Window>
+                <Window Type="Vanilla/StaticImage" Name="Run/Ally/Player1/Job" >
+                    <Property Name="FrameEnabled" Value="False" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0.2,0},{0.2,0},{0.8,0}}" />
+                </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="Run/Ally/Player2" >
+                <Property Name="Font" Value="Malgun-10" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0.33,0},{1,0},{0.66,0}}" />
+                <Window Type="Vanilla/StaticText" Name="Run/Ally/Player2/Name" >
+                    <Property Name="Font" Value="Malgun-10" />
+                    <Property Name="Text" Value="플레이어" />
+                    <Property Name="HorzExtent" Value="68" />
+                    <Property Name="VertExtent" Value="22.6945" />
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="FrameEnabled" Value="False" />
+                    <Property Name="HorzFormatting" Value="HorzCentred" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.2,0},{0.2,0},{1,0},{0.5,0}}" />
+                    <Property Name="BackgroundEnabled" Value="False" />
+                </Window>
+                <Window Type="Vanilla/StaticImage" Name="Run/Ally/Player2/HP" >
+                    <Property Name="Image" Value="set:Ingame image:HP_Bar" />
+                    <Property Name="FrameEnabled" Value="False" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.2,0},{0.5,0},{1,0},{0.8,0}}" />
+                    <Property Name="BackgroundEnabled" Value="False" />
+                </Window>
+                <Window Type="Vanilla/StaticImage" Name="Run/Ally/Player2/Job" >
+                    <Property Name="FrameEnabled" Value="False" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0.2,0},{0.2,0},{0.8,0}}" />
+                </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="Run/Ally/Player3" >
+                <Property Name="Font" Value="Malgun-10" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0.66,0},{1,0},{1,0}}" />
+                <Window Type="Vanilla/StaticText" Name="Run/Ally/Player3/Name" >
+                    <Property Name="Font" Value="Malgun-10" />
+                    <Property Name="Text" Value="플레이어" />
+                    <Property Name="HorzExtent" Value="68" />
+                    <Property Name="VertExtent" Value="22.6945" />
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="FrameEnabled" Value="False" />
+                    <Property Name="HorzFormatting" Value="HorzCentred" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.2,0},{0.2,0},{1,0},{0.5,0}}" />
+                    <Property Name="BackgroundEnabled" Value="False" />
+                </Window>
+                <Window Type="Vanilla/StaticImage" Name="Run/Ally/Player3/HP" >
+                    <Property Name="Image" Value="set:Ingame image:HP_Bar" />
+                    <Property Name="FrameEnabled" Value="False" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.2,0},{0.5,0},{1,0},{0.8,0}}" />
+                    <Property Name="BackgroundEnabled" Value="False" />
+                </Window>
+                <Window Type="Vanilla/StaticImage" Name="Run/Ally/Player3/Job" >
+                    <Property Name="FrameEnabled" Value="False" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0.2,0},{0.2,0},{0.8,0}}" />
+                </Window>
+            </Window>
+        </Window>
+        <Window Type="Vanilla/StaticImage" Name="Run/Menu" >
+            <Property Name="Font" Value="Malgun-10" />
+            <Property Name="Image" Value="set:Ingame image:Window_Menu" />
+            <Property Name="Visible" Value="False" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.4,0},{0.3,0},{0.6,0},{0.6,0}}" />
+            <Window Type="Vanilla/Button" Name="Run/Menu/Button_Exit" >
+                <Property Name="Font" Value="Malgun-10" />
+                <Property Name="HoverImage" Value="set:Ingame image:Exit_Hover" />
+                <Property Name="NormalImage" Value="set:Ingame image:Exit_Normal" />
+                <Property Name="PushedImage" Value="set:Ingame image:Exit_Push" />
+                <Property Name="UnifiedAreaRect" Value="{{0.25,0},{0.65,0},{0.75,0},{0.85,0}}" />
+            </Window>
+            <Window Type="Vanilla/Button" Name="Run/Menu/Button_Return" >
+                <Property Name="Font" Value="Malgun-10" />
+                <Property Name="HoverImage" Value="set:Ingame image:Game_Hover" />
+                <Property Name="NormalImage" Value="set:Ingame image:Game_Normal" />
+                <Property Name="PushedImage" Value="set:Ingame image:Game_Push" />
+                <Property Name="UnifiedAreaRect" Value="{{0.25,0},{0.35,0},{0.75,0},{0.55,0}}" />
+            </Window>
+            <Window Type="Vanilla/StaticImage" Name="Run/Menu/Text_Menu" >
+                <Property Name="Image" Value="set:Ingame image:Text_Menu" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0.3,0},{0.08,0},{0.7,0},{0.19,0}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Run/Chat" >
+            <Property Name="Font" Value="Malgun-10" />
+            <Property Name="Alpha" Value="0.6" />
+            <Property Name="Visible" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.01,0},{0.8,0},{0.45,0},{0.98,0}}" />
+            <Window Type="Vanilla/Listbox" Name="Run/Chat/List" >
+                <Property Name="Font" Value="Malgun-10" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{0.8,0}}" />
+            </Window>
+            <Window Type="Vanilla/Editbox" Name="Run/Chat/Edit_Input" >
+                <Property Name="Font" Value="Malgun-10" />
+                <Property Name="MaxTextLength" Value="1073741823" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0.8,0},{1,0},{1,0}}" />
+                <Property Name="TextParsingEnabled" Value="False" />
+            </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Run/MyCharacter" >
+            <Property Name="UnifiedAreaRect" Value="{{0.01,0},{0.01,0},{0.3,0},{0.16,0}}" />
+            <Window Type="Vanilla/StaticImage" Name="Run/MyCharacter/Frame" >
+                <Property Name="Image" Value="set:Ingame image:Status_Bar" />
+                <Property Name="AlwaysOnTop" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="Vanilla/StaticImage" Name="Run/MyCharacter/HP" >
+                <Property Name="Image" Value="set:Ingame image:HP_Bar" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0.305169,0},{0.590625,0},{0.990866,0},{0.7858,0}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="Vanilla/StaticImage" Name="Run/MyCharacter/MP" >
+                <Property Name="Image" Value="set:Ingame image:MP_Bar" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0.257432,0},{0.841392,0},{0.990704,0},{0.920065,0}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="Vanilla/StaticImage" Name="Run/MyCharacter/Image" >
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0.34,0},{1,0}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="Run/Skills" >
+            <Property Name="UnifiedAreaRect" Value="{{0.43,0},{0.92,0},{0.57,0},{0.98,0}}" />
+            <Window Type="Vanilla/StaticImage" Name="Run/Skills/Skill1" >
+                <Property Name="Image" Value="set:Ingame image:Walker_Skill1_Normal" />
+                <Property Name="AlwaysOnTop" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0.3,0},{1,0}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+                <Window Type="Vanilla/StaticImage" Name="Run/Skills/Skill1/Skill1_Cool" >
+                    <Property Name="Image" Value="set:Ingame image:Cool" />
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="FrameEnabled" Value="False" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+                    <Property Name="BackgroundEnabled" Value="False" />
+                </Window>
+            </Window>
+            <Window Type="Vanilla/StaticImage" Name="Run/Skills/Skill2" >
+                <Property Name="Image" Value="set:Ingame image:Walker_Skill2_Normal" />
+                <Property Name="AlwaysOnTop" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0.35,0},{0,0},{0.65,0},{1,0}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+                <Window Type="Vanilla/StaticImage" Name="Run/Skills/Skill2/Skill2_Cool" >
+                    <Property Name="Image" Value="set:Ingame image:Cool" />
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="FrameEnabled" Value="False" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+                    <Property Name="BackgroundEnabled" Value="False" />
+                </Window>
+            </Window>
+            <Window Type="Vanilla/StaticImage" Name="Run/Skills/Skill3" >
+                <Property Name="Image" Value="set:Ingame image:Walker_Skill3_Normal" />
+                <Property Name="AlwaysOnTop" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0.7,0},{0,0},{1,0},{1,0}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+                <Window Type="Vanilla/StaticImage" Name="Run/Skills/Skill3/Skill3_Cool" >
+                    <Property Name="Image" Value="set:Ingame image:Cool" />
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="FrameEnabled" Value="False" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+                    <Property Name="BackgroundEnabled" Value="False" />
+                </Window>
+            </Window>
+        </Window>
+        <Window Type="Vanilla/StaticImage" Name="Run/Loading" >
+            <Property Name="Font" Value="Malgun-10" />
+            <Property Name="Image" Value="set:loading image:full_image" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+        </Window>
+    </Window>
+</GUILayout>

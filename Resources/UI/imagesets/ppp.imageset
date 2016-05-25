@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Imageset Name="InGameUI" Imagefile="sadg.png" NativeHorzRes="1280" NativeVertRes="1024" AutoScaled="true" >
+    <Image Name="Talks" XPos="101" YPos="699" Width="432" Height="288" />
+    <Image Name="HPKing" XPos="74" YPos="23" Width="473" Height="161" />
+    <Image Name="HPSmall" XPos="948" YPos="77" Width="264" Height="103" />
+</Imageset>

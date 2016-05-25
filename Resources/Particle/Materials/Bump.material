@@ -1,0 +1,42 @@
+material Bump
+{
+	technique
+	{
+		pass
+		{
+			cull_hardware none
+			cull_software none
+			ambient 1.266667 0.266667 0.266667 1.000000
+			diffuse 0.266667 0.266667 0.266667 1.000000
+			specular 0.333333 0.333333 0.333333 1.000000
+			emissive 1.000000 0.000000 0.000000 1.000000
+			
+			//depth_write off
+			scene_blend alpha_blend
+			
+			vertex_program_ref BumpVSglsl
+			{
+			}
+			
+			fragment_program_ref BumpPSglsl
+			{
+			}
+			
+			texture_unit
+			{
+				texture Resources/Textures/BasketBall.png
+				tex_address_mode wrap
+				tex_coord_set 0
+				scale 1.000000 1.000000
+			}
+			
+			texture_unit
+			{
+				texture Resources/Textures/BasketBall.nor.png
+				tex_address_mode wrap
+				tex_coord_set 1
+				scale 1.000000 1.000000
+			}
+		}
+	}
+}

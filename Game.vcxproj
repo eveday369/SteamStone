@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C059A630-6429-4313-802A-261C0EB4091D}</ProjectGuid>
+    <RootNamespace>Game</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IntDir>obj\$(Configuration)\</IntDir>
+    <OutDir>bin\$(Configuration)\</OutDir>
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>..\OpenAl\openallibs\include;C:\Ogres\CEGUI\CEGUI-0.7.9\cegui\include;C:\Ogres\CEGUI\CEGUI-0.7.9\cegui;..\server_include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\OpenAl\openallibs\lib;C:\Ogres\CEGUI\CEGUI-0.7.9\lib;..\server_lib\debug;$(LibraryPath)</LibraryPath>
+    <EmbedManifest>true</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IntDir>obj\$(Configuration)\</IntDir>
+    <OutDir>bin\$(Configuration)\</OutDir>
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>..\OpenAl\openallibs\include;C:\Ogres\CEGUI\CEGUI-0.7.9\cegui\include;C:\Ogres\CEGUI\CEGUI-0.7.9\cegui;..\server_include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\OpenAl\openallibs\lib;C:\Ogres\CEGUI\CEGUI-0.7.9\lib;..\server_lib\release;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>include;$(OGRE_HOME)\include;$(OGRE_HOME)\include\OIS;$(OGRE_HOME)\include\OGRE;$(OGRE_HOME)\Samples\Common\include;$(OGRE_HOME)\boost;server;..\protoc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zm196 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)/Game.pdb</ProgramDatabaseFile>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>$(OGRE_HOME)\lib\debug;$(OGRE_HOME)\boost\lib;server\lib;$(OGRE_HOME)\lib\debug\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>OgreMain_d.lib;OIS_d.lib;CEGUIBase_d.lib;CEGUIOgreRenderer_d.lib;alut.lib;OpenAL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Message>Copying exe to samples bin directory ...</Message>
+      <Command>copy "$(OutDir)\$(TargetFileName)" "$(OGRE_HOME)\Bin\$(Configuration)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <AdditionalIncludeDirectories>include;$(OGRE_HOME)\include;$(OGRE_HOME)\include\OIS;$(OGRE_HOME)\include\OGRE;$(OGRE_HOME)\Samples\Common\include;$(OGRE_HOME)\boost;server;..\protoc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zm196 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OGRE_HOME)\lib\release;$(OGRE_HOME)\boost\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>OgreMain.lib;OIS.lib;CEGUIBase.lib;CEGUIOgreRenderer.lib;alut.lib;OpenAL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Message>Copying exe to samples bin directory ...</Message>
+      <Command>copy "$(OutDir)\$(TargetFileName)" "$(OGRE_HOME)\Bin\$(Configuration)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\protoc\Chat_Packet.pb.h" />
+    <ClInclude Include="..\protoc\Game_Packet.pb.h" />
+    <ClInclude Include="..\protoc\Lobby_Packet.pb.h" />
+    <ClInclude Include="..\protoc\Login_Packet.pb.h" />
+    <ClInclude Include="..\protoc\PACKET.pb.h" />
+    <ClInclude Include="include\Animation.h" />
+    <ClInclude Include="include\BaseApplication.h" />
+    <ClInclude Include="include\Camera.h" />
+    <ClInclude Include="include\Character.h" />
+    <ClInclude Include="include\Effect.h" />
+    <ClInclude Include="include\Energy.h" />
+    <ClInclude Include="include\Game.h" />
+    <ClInclude Include="include\GameLobbyWindow.h" />
+    <ClInclude Include="include\GameLoginWindow.h" />
+    <ClInclude Include="include\GameResultWindow.h" />
+    <ClInclude Include="include\GameRoomWindow.h" />
+    <ClInclude Include="include\GameRun.h" />
+    <ClInclude Include="include\GameRunWindow.h" />
+    <ClInclude Include="include\GameState.h" />
+    <ClInclude Include="include\GUIBase.h" />
+    <ClInclude Include="include\Keyboard.h" />
+    <ClInclude Include="include\Map.h" />
+    <ClInclude Include="include\Mouse.h" />
+    <ClInclude Include="include\MovableText.h" />
+    <ClInclude Include="include\Result.h" />
+    <ClInclude Include="include\Skill.h" />
+    <ClInclude Include="include\SoundMan.h" />
+    <ClInclude Include="include\SoundManager.h" />
+    <ClInclude Include="include\stdafx.h" />
+    <ClInclude Include="res\Resource.h" />
+    <ClInclude Include="server\ChatServer.h" />
+    <ClInclude Include="server\CServerMain.h" />
+    <ClInclude Include="server\GameServer.h" />
+    <ClInclude Include="server\LobbyServer.h" />
+    <ClInclude Include="server\LoginServer.h" />
+    <ClInclude Include="server\PacketBuffer.h" />
+    <ClInclude Include="server\Server.h" />
+    <ClInclude Include="server\common.h" />
+    <ClInclude Include="server\Typedef_packet.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\protoc\Chat_Packet.pb.cc" />
+    <ClCompile Include="..\protoc\Game_Packet.pb.cc" />
+    <ClCompile Include="..\protoc\Lobby_Packet.pb.cc" />
+    <ClCompile Include="..\protoc\Login_Packet.pb.cc" />
+    <ClCompile Include="..\protoc\PACKET.pb.cc" />
+    <ClCompile Include="include\stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="server\ChatServer.cpp" />
+    <ClCompile Include="server\CServerMain.cpp" />
+    <ClCompile Include="server\GameServer.cpp" />
+    <ClCompile Include="server\LobbyServer.cpp" />
+    <ClCompile Include="server\LoginServer.cpp" />
+    <ClCompile Include="server\PacketBuffer.cpp" />
+    <ClCompile Include="server\Server.cpp" />
+    <ClCompile Include="src\Animation.cpp" />
+    <ClCompile Include="src\BaseApplication.cpp" />
+    <ClCompile Include="src\Camera.cpp" />
+    <ClCompile Include="src\Character.cpp" />
+    <ClCompile Include="src\Effect.cpp" />
+    <ClCompile Include="src\Energy.cpp" />
+    <ClCompile Include="src\Game.cpp" />
+    <ClCompile Include="src\GameLobbyWindow.cpp" />
+    <ClCompile Include="src\GameLoginWindow.cpp" />
+    <ClCompile Include="src\GameResultWindow.cpp" />
+    <ClCompile Include="src\GameRoomWindow.cpp" />
+    <ClCompile Include="src\GameRun.cpp" />
+    <ClCompile Include="src\GameRunWindow.cpp" />
+    <ClCompile Include="src\GUIBase.cpp" />
+    <ClCompile Include="src\Keyboard.cpp" />
+    <ClCompile Include="src\Map.cpp" />
+    <ClCompile Include="src\Mouse.cpp" />
+    <ClCompile Include="src\MovableText.cpp" />
+    <ClCompile Include="src\Result.cpp" />
+    <ClCompile Include="src\Skill.cpp" />
+    <ClCompile Include="src\SoundMan.cpp" />
+    <ClCompile Include="src\SoundManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="include\Readme.txt" />
+    <None Include="res\Game.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="res\Game.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

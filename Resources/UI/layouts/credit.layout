@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="DefaultWindow" Name="EndCreditRoot" >
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+        <Window Type="TaharezLook/StaticImage" Name="CreditBackground" >
+            <Property Name="Image" Value="set:Title3 image:full_image" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/StaticImage" Name="Credit_1" >
+                <Property Name="Image" Value="set:Credit_set1 image:Credit1" />
+                <Property Name="AlwaysOnTop" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0.09082,0},{-1,0},{0.902344,0},{0.985372,0}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticImage" Name="Credit_2" >
+                <Property Name="Image" Value="set:Credit_set2 image:Credit2" />
+                <Property Name="AlwaysOnTop" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0.091016,0},{-1,0},{0.902539,0},{0.984841,0}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticImage" Name="Credit_3" >
+                <Property Name="Image" Value="set:Credit_set3 image:Credit3" />
+                <Property Name="AlwaysOnTop" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0.09043,0},{-1,0},{0.901953,0},{0.985107,0}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticImage" Name="Credit_4" >
+                <Property Name="Image" Value="set:Credit_set4 image:Credit4" />
+                <Property Name="AlwaysOnTop" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0.091797,0},{-1,0},{0.90332,0},{0.985374,0}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/ImageButton" Name="NextLogin" >
+                <Property Name="HoverImage" Value="set:Ingame image:Exit_Hover" />
+                <Property Name="NormalImage" Value="set:Ingame image:Exit_Normal" />
+                <Property Name="PushedImage" Value="set:Ingame image:Exit_Push" />
+                <Property Name="UnifiedAreaRect" Value="{{0.846094,0},{0.897955,0},{0.979882,0},{0.971009,0}}" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

@@ -1,0 +1,11 @@
+fragment_program Ogre/Compositor/QuadBlendScreen_GLSL_fp glsl
+{
+	source Resources/Programs/QuadBlendScreen_fp.glsl
+	default_params
+	{
+		param_named TEX0 int 0
+		param_named red float 0.0
+		param_named green float 0.0
+		param_named blue float 0.0
+	}
+}

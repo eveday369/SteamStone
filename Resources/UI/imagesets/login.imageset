@@ -1,0 +1,30 @@
+<Imageset AutoScaled="true" Imagefile="login.png" Name="Login" NativeHorzRes="1280" NativeVertRes="1024">
+    <Image Height="53" Name="OK_Normal" Width="118" XPos="15" YPos="15" />
+    <Image Height="53" Name="OK_Push" Width="118" XPos="15" YPos="76" />
+    <Image Height="53" Name="Login_Normal" Width="118" XPos="138" YPos="15" />
+    <Image Height="53" Name="Login_Push" Width="118" XPos="138" YPos="76" />
+    <Image Height="53" Name="Exit_Normal" Width="118" XPos="389" YPos="15" />
+    <Image Height="53" Name="Exit_Push" Width="118" XPos="389" YPos="77" />
+    <Image Height="53" Name="Join_Normal" Width="118" XPos="516" YPos="16" />
+    <Image Height="53" Name="OK_Hover" Width="118" XPos="286" YPos="143" />
+    <Image Height="53" Name="Login_Hover" Width="118" XPos="409" YPos="143" />
+    <Image Height="53" Name="Cancel_Hover" Width="118" XPos="286" YPos="199" />
+    <Image Height="53" Name="Cancel_Normal" Width="118" XPos="263" YPos="15" />
+    <Image Height="53" Name="Cancel_Push" Width="118" XPos="263" YPos="77" />
+    <Image Height="53" Name="Join_Push" Width="118" XPos="516" YPos="75" />
+    <Image Height="53" Name="Join_Hover" Width="118" XPos="535" YPos="135" />
+    <Image Height="53" Name="Exit_Hover" Width="118" XPos="409" YPos="199" />
+    <Image Height="199" Name="Login" Width="260" XPos="295" YPos="283" />
+    <Image Height="343" Name="Join" Width="260" XPos="17" YPos="142" />
+    <Image Height="199" Name="Error" Width="260" XPos="18" YPos="497" />
+    <Image Height="199" Name="Progress" Width="260" XPos="298" YPos="498" />
+    <Image Height="34" Name="Text_ID" Width="42" XPos="565" YPos="328" />
+    <Image Height="34" Name="Text_Password" Width="92" XPos="564" YPos="364" />
+    <Image Height="39" Name="Text_Join" Width="128" XPos="558" YPos="406" />
+    <Image Height="39" Name="Text_Login" Width="126" XPos="558" YPos="451" />
+    <Image Height="38" Name="Text_Error" Width="130" XPos="559" YPos="495" />
+    <Image Height="42" Name="Text_Progress" Width="174" XPos="560" YPos="539" />
+    <Image Height="53" Name="OKW_Normal" Width="118" XPos="645" YPos="16" />
+    <Image Height="53" Name="OKW_Push" Width="118" XPos="645" YPos="75" />
+    <Image Height="53" Name="OKW_Hover" Width="118" XPos="664" YPos="135" />
+</Imageset>

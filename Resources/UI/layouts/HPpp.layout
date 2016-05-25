@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="DefaultWindow" Name="Root" >
+        <Property Name="UnifiedAreaRect" Value="{{-0.00158521,0},{-2.16803e-005,0},{0.998414,0},{0.999979,0}}" />
+        <Window Type="TaharezLook/StaticImage" Name="Root/hp1" >
+            <Property Name="Image" Value="set:InGameUI image:HPKing" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0256779,0},{0.0337158,0},{0.297423,0},{0.239328,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="Root/hp4" >
+            <Property Name="Image" Value="set:InGameUI image:HPSmall" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.830389,0},{0.0694623,0},{0.964108,0},{0.18764,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="WindowsLook/StaticImage" Name="Root/Talk" >
+            <Property Name="Image" Value="set:InGameUI image:Talks" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0470865,0},{0.710639,0},{0.295003,0},{0.977499,0}}" />
+        </Window>
+    </Window>
+</GUILayout>

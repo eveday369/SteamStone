@@ -1,0 +1,134 @@
+import * from "CelShading.material"
+import * from "Outline.material"
+ 
+material Walker/Skin
+{
+	technique
+	{
+		pass : CelShadingDecalSpec
+		{	
+			//specular 0.4 0.6 0.4 32
+			specular 1 1 1 32
+ 
+			texture_unit decal {
+				texture walkeridle.psd}
+			texture_unit specMap {
+				texture walkeridle.psd}
+		}
+		pass : OutlineExperiment {
+			set $sinkScale 1 }
+	}
+}
+material Walker/Skin2
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture walkeridle.psd
+			}
+		}
+		pass : OutlineExperiment 
+		{
+			set $sinkScale 1 
+		}
+	}
+}
+material Psyker/Skin
+{
+	technique
+	{
+		pass : CelShadingDecalSpec
+		{	
+			//specular 0.4 0.6 0.4 32
+			specular 1 1 1 32
+ 
+			texture_unit decal {
+				texture psykerpsycor.tga}
+			texture_unit specMap {
+				texture psykerpsycor.tga}
+		}
+		pass : OutlineExperiment {
+			set $sinkScale 1 }
+	}
+}
+material Psyker/Skin2
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture psykerpsycor.tga
+			}
+		}
+		pass : OutlineExperiment 
+		{
+			set $sinkScale 1 
+		}
+	}
+}
+material Gunner/Skin2
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture gunneridle.png
+			}
+		}
+		pass : OutlineExperiment 
+		{
+			set $sinkScale 1 
+		}
+	}
+}
+material Ogre/Tusks
+{
+	technique
+	{
+		pass : CelShadingDecal
+		{
+			diffuse 0.75 0.75 0.75
+ 
+			texture_unit decal {
+				texture tusk.jpg }
+		}
+		pass : OutlineExperiment {
+			diffuse 0.1 0.1 0.1 }
+	}
+}
+material Ogre/Earring
+{
+	technique
+	{
+		pass : CelShading
+		{
+			ambient 0.8 0.8 0
+			diffuse 0.8 0.8 0
+			specular 1 1 1 8
+		}
+		pass : OutlineExperiment {
+			diffuse 0.2 0.2 0 }
+	}
+}
+material Ogre/Eyes
+{
+	technique
+	{
+		pass : CelShading
+		{
+			ambient 1 0.4 0.4
+			diffuse 1 0.7 0
+			emissive 0.3 0.1 0
+			specular 1 0.8 0.5 128
+		}
+		pass : OutlineExperiment {
+			diffuse 0.25 0.15 0 }
+	}
+}

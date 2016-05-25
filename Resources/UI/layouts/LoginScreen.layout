@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="DefaultWindow" Name="Root" >
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+        <Window Type="Vanilla/StaticImage" Name="LoginBackground" >
+            <Property Name="Font" Value="DejaVuSans-10" />
+            <Property Name="Image" Value="set:LoginBackground image:full_image" />
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+            <Window Type="Vanilla/StaticImage" Name="LoginTitle" >
+                <Property Name="Font" Value="DejaVuSans-10" />
+                <Property Name="Image" Value="set:LoginTitle image:Login_Title" />
+                <Property Name="UnifiedAreaRect" Value="{{0.16504,0},{0.0630208,0},{0.807813,0},{0.63724,0}}" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>
